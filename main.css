@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+header .container,
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding: 16px 0px;
+    background-color: blue;
+    color: #fff;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.loja-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 32px;
+}
+
+.comeco {
+    width: 70%;
+}
+
+.comeco h2 {
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid blue;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+header nav li a {
+    color: #fff;
+}
+
+
+.Sobre-a-loja {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    margin: 64px 0;
+}
+
+.Sobre-a-loja img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+}
+
+.comeco p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+h2 {
+    margin-bottom: 40px;
+    border-bottom: 2px solid blue;
+    padding-bottom: 8px;
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Produtos img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.Produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px; 
+    margin-top: 16px;
+}
+
+.Produtos article {
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.Produtos h3 {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.Produtos p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.Produtos button {
+    padding: 8px 12px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.Produtos button:hover {
+    background-color: blue;
+}
+
+aside {
+    padding-left: 50;
+}
+
+@media screen and (max-width: 640px) {
+    .Produtos {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .Sobre-a-loja {
+        display: block;
+        align-items: center;
+    }
+
+    .Sobre-a-loja img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .comeco {
+        width: 100%;
+    }
+
+    .comeco p {
+        width: 100%;
+    }
+
+    .comeco h2 {
+        color: blue;
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 2px solid blue;
+        margin-bottom: 8px;
+    }
+
+    .Produtos {
+        display: block;
+    }
+
+    .Produtos img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .Produtos p {
+        margin-bottom: 32px;
+        color: #333;
+    }
+
+    aside {
+        padding-left: 0px;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .Produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .Sobre-a-loja img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .Sobre-a-loja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comeco {
+        width: 100%;
+    }
+
+    .Produtos img {
+        width: 100%;
+        height: auto;
+    }
+
+    aside {
+        padding-left: 0px;
+    }
+}
